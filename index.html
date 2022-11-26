@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubMeter Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>SubMeter Calculator</h2>
+            <div class="content">
+                <div class="input">
+                    <label for="CurrentReading">Current Reading</label>
+                   <input type="number" id="CurReading" placeholder="Current Reading">
+                </div>
+                <div class="input">
+                    <label for="PreviousReading">Previous Reading</label>
+                    <input type="number" id="PreReading" placeholder="Previous Reading">
+                </div>
+                <div class="input">
+                    <label for="KwhRate">Kwh Rate</label>
+                    <input type="number" id="Rate" placeholder="Kwh Rate">
+                </div>
+                <button type ="button" id= "Calculate">Calculate</button>
+            </div>
+            <div class="result">
+                <p>Amount to Pay: </p>
+            <div id="result">00.000</div>
+            </div>
+        </div>
+    </div>
+    <script src="Calculate.js"></script>
+</body>
+</html>
